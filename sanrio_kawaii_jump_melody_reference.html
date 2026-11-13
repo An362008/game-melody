@@ -2774,7 +2774,7 @@ canvas.addEventListener("touchmove", e => {
       // Di chuyển mượt theo ngón tay kéo và giữ trong biên trái/phải
       const minX = player.w / 2 + 4;
       const maxX = W - player.w / 2 - 4;
-      player.x = Math.max(minX, Math.min(maxX, player.x + dx * (W / canvas.getBoundingClientRect().width) * 0.68));
+      player.x = Math.max(minX, Math.min(maxX, player.x + dx * (W / canvas.getBoundingClientRect().width) * 0.40));
       if (dx < -1.5) {
         left = true;
         right = false;
